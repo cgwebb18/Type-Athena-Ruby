@@ -1,0 +1,44 @@
+/* jQuery UI is not loaded!
+  this demo uses the "keyboard-dark.css" theme
+  ( https://github.com/Mottie/Keyboard/blob/master/css/keyboard-dark.css )
+  to add a basic dark theme to the keyboard
+
+  The theme includes css to position the keyboard
+  at the botom of the browser window
+*/
+ body {
+    font-family: 'athena_rubyregular';
+    margin-top: 10px;
+    background: #222;
+}
+textarea, input {
+    font-family: 'athena_rubyregular';
+    width: 260px;
+    background: #111;
+    color: #eee;
+    border: #444 1px solid;
+    padding: 5px 0;
+}
+
+.ui-keyboard-text {
+  font-family: 'athena_rubyregular';
+}
+
+#wrap {
+    display: block;
+    margin: auto auto;
+    width: 200px;
+}
+
+@font-face {
+    font-family: 'athena_rubyregular';
+    src: url('font/athenaruby_b018-webfont.eot');
+    src: url('font/athenaruby_b018-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/athenaruby_b018-webfont.woff2') format('woff2'),
+         url('font/athenaruby_b018-webfont.woff') format('woff'),
+         url('font/athenaruby_b018-webfont.ttf') format('truetype'),
+         url('font/athenaruby_b018-webfont.svg#athena_rubyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
