@@ -60,6 +60,7 @@ textarea, input {
   color: white;
   position: fixed;
   bottom: 30%;
+  margin-left: 25%;
   text-align: center;
 }
 
