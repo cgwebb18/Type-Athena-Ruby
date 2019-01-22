@@ -1,10 +1,14 @@
+
+
 $(function(){
+  // $.extend( $.keyboard.altKeys, AR_altKeys);
 		$('#main_keyboard').keyboard({
 			layout: 'AR-Latin',
 			repeatRate : 0
 		}).addTyping({
         showTyping: true,
-        delay: 250
+        delay: 1000,
+        hoverDelay: 990
     }).previewKeyset({
       'sets': ['normal', 'shift']
     }).addAltKeyPopup({
@@ -16,6 +20,7 @@ $(function(){
 			// or the keys from keyboard.altKeyPopup_$overlay.find('.ui-keyboard-button')
 			popupVisible : 'popup-visible'
 		});
+    $.keyboard.altKeys = AR_altKeys;
 	});
 
 
