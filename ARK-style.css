@@ -11,6 +11,7 @@
     margin-top: 10px;
     background: #222;
 }
+
 textarea, input {
     font-family: 'athena_rubyregular';
     width: 260px;
@@ -21,6 +22,10 @@ textarea, input {
 }
 
 .ui-keyboard-text {
+  font-family: 'athena_rubyregular';
+}
+
+.ui-widget input {
   font-family: 'athena_rubyregular';
 }
 
