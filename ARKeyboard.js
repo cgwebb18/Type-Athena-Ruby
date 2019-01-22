@@ -4,7 +4,8 @@ $(function(){
   // $.extend( $.keyboard.altKeys, AR_altKeys);
 		$('#main_keyboard').keyboard({
 			layout: 'AR-Latin',
-			repeatRate : 0
+			repeatRate : 0,
+      combos : AR_combos
 		}).addTyping({
         showTyping: true,
         delay: 1000,
@@ -22,7 +23,6 @@ $(function(){
 		});
     $.keyboard.altKeys = AR_altKeys;
 	});
-
 
 
 $.keyboard.keyaction.enter = function (base) {

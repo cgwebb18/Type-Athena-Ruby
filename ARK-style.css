@@ -29,6 +29,9 @@ textarea, input {
   font-family: 'athena_rubyregular';
 }
 
+.ui-keyboard-button.ui-keyboard-combo{
+  border-width: 3px;
+}
 
 #input {
     display: block;
