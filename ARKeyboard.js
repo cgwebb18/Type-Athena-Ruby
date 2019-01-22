@@ -5,7 +5,11 @@ $(function(){
 		$('#main_keyboard').keyboard({
 			layout: 'AR-Latin',
 			repeatRate : 0,
-      combos : AR_combos
+      combos : AR_combos,
+      display : {
+        'combo' : 'Combos',
+        'meta1' : 'Greek'
+      }
 		}).addTyping({
         showTyping: true,
         delay: 1000,
@@ -24,11 +28,14 @@ $(function(){
     $.keyboard.altKeys = AR_altKeys;
 	});
 
+$.keyboard.keyaction.meta1 = function (base) {
+  var keyboard = $('#main_keyboard');
+  keyboard.showKeySet('meta1');
+};
 
 $.keyboard.keyaction.enter = function (base) {
   console.log(base.el.value)
   var v = document.getElementById('main_keyboard');
   v.select()
   document.execCommand('copy');
-
-}
+};
