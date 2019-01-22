@@ -24,7 +24,7 @@ textarea, input {
   font-family: 'athena_rubyregular';
 }
 
-#wrap {
+#input {
     display: block;
     margin: auto auto;
     width: 200px;

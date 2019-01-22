@@ -6,7 +6,13 @@
 	<link rel="stylesheet" href="ARK-style.css" type="text/css" charset="utf-8" />
 
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.28.7/css/keyboard-previewkeyset.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<script src="	https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.28.7/js/jquery.keyboard.extension-previewkeyset.min.js"></script>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.28.7/js/jquery.keyboard.js"></script>
 
@@ -17,7 +23,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.28.7/js/jquery.keyboard.extension-typing.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+	
+	<script src="layouts/layout-start.js"></script>
 
+ <script src="layouts/jquery.keyboard.extension-altkeyspopup.js"></script>
   <!-- Custom JS and CSS -->
   <script src="ARKeyboard.js"></script>
   <link rel="stylesheet" href="ARK-style.css"/>
@@ -27,8 +36,13 @@
 </head>
 
 <body>
-<div id="wrap">
-  <input id="keyboard" type="text" placeholder="Enter something..." />
+<!-- This is where my idea for a downloadable 'history' area would go -->
+<!-- <div id='history'>
+  <ul id='h-list'>
+  </ul>
+</div> -->
+<div id="input">
+  <input id="main_keyboard" type="text" placeholder="Enter something..." />
 </div>
 </body>
 </html>
