@@ -21,6 +21,10 @@ textarea, input {
     padding: 5px 0;
 }
 
+.ui-keyboard {
+  height: 50%;
+}
+
 .ui-keyboard-text {
   font-family: 'athena_rubyregular';
 }
@@ -50,4 +54,19 @@ textarea, input {
     font-weight: normal;
     font-style: normal;
 
+}
+
+#instructions {
+  color: white;
+  position: fixed;
+  bottom: 30%;
+  text-align: center;
+}
+
+#i_ex {
+  color: #d58512
+}
+
+#a_ex {
+  color: #269abc
 }
