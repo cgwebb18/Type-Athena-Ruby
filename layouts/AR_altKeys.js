@@ -20,6 +20,8 @@ var AR_altKeys =
   t : '\ue341 \ue342 \ue343 \ue344',
   u : '\ue345 \ue346 \ue347 \ue348',
   v : '\ue349 \ue34a',
-  z : '\ue34b'
+  z : '\ue34b',
+  // This is the Greek keyboard's popups
+  // '\u0391' : '\ue100 '
 
 }

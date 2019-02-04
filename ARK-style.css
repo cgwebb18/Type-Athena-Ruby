@@ -71,3 +71,29 @@ textarea, input {
 #a_ex {
   color: #269abc
 }
+
+/* custom css for previewkeyset */
+/* basic previewKeyset setup - modify as desired */
+.ui-keyboard-keyset .ui-keyboard-button {
+	position: relative;
+}
+/* show mini-shift keyset with normal keyset */
+.ui-keyboard-keyset-normal .ui-keyboard-button::after {
+	content: attr(data-alt);
+	font-size: 0.6em;
+	color: #999;
+	position: absolute;
+	top: -1em;
+	left: 2px;
+	z-index: 200;
+}
+/* show mini-shift keyset with normal keyset */
+.ui-keyboard-keyset-meta1 .ui-keyboard-button::after {
+	content: attr(data-alt);
+	font-size: 0.6em;
+	color: #999;
+	position: absolute;
+	top: -1em;
+	left: 2px;
+	z-index: 200;
+}
