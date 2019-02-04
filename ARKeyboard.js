@@ -4,17 +4,17 @@
 
 $(function(){
 
-
-  var remapGreek = {
-    'a': '\u0391', 'b': '\u0392', 'c': '\u03a8', 'd': '\u0393', 'e': '\u03a1',
-    'f': '\u03a6', 'g': '\u0393', 'h': '\u0397', 'i': '\u0399', 'j': '\u039e',
-    'k': '\u039a', 'l': '\u039b', 'm': '\u039c', 'n': '\u039d', 'o': '\u039f',
-    'p': '\u03a0', 'q': '\u0313', 'r': '\u0395', 's': '\u03a3', 't': '\u03a4',
-    'u': '\u0398', 'v': '\u03a9', 'w': '\u03da', 'x': '\u03a7', 'y': '\u03a5',
-    'z': '\u0396'
-  }
+  // var f_string = '';
+  // var remapGreek = {
+  //   'a': '\u0391', 'b': '\u0392', 'c': '\u03a8', 'd': '\u0393', 'e': '\u03a1',
+  //   'f': '\u03a6', 'g': '\u0393', 'h': '\u0397', 'i': '\u0399', 'j': '\u039e',
+  //   'k': '\u039a', 'l': '\u039b', 'm': '\u039c', 'n': '\u039d', 'o': '\u039f',
+  //   'p': '\u03a0', 'q': '\u0313', 'r': '\u0395', 's': '\u03a3', 't': '\u03a4',
+  //   'u': '\u0398', 'v': '\u03a9', 'w': '\u03da', 'x': '\u03a7', 'y': '\u03a5',
+  //   'z': '\u0396'
+  // }
   //To Do: Add Greek Alt Keys
-  $.extend($.keyboard.altKeys = AR_altKeys);
+  $.extend($.kb.altKeys = AR_altKeys);
   //using enter and alt because they are common to both keyboards
   $.extend($.keyboard.keyaction.enter = function(base){
       var t = document.getElementsByClassName('ui-keyboard-preview')[0];
@@ -24,40 +24,38 @@ $(function(){
       document.execCommand('copy');
       f_str = '';
   });
-  $.extend($.keyboard.keyaction.alt = function(base){
-    console.log(base.el.id);
+  $.extend($.keyboard.keyaction.shift = function(base){
+    base.redraw('AR_G').caret('end');
   });
   //changing language copies current text into new input and hides old input + kb
   $.extend($.keyboard.keyaction.accept = function(base){
-    f_str = f_str + base.getValue();
     //hides the current input
     $(base.el.id).hide();
   });
 
-  var l_kb = $('#l_kb').keyboard({
-  	layout: 'AR',
+  var kb = $('#l_kb').keyboard({
+  	layout: 'AR_L',
     stayOpen: true,
   	repeatRate : 0,
     combos : AR_combos,
     display : {
       'enter' : 'Copy',
-      'meta1' : 'Greek',
-      'normal' : 'Latin'
+      'shift' : 'Greek'
     },
-    beforeInsert: function(e, keyboard, el, textToAdd){
-      return keyboard.metaActive ?
-      // don't remap if alt is active
-      remapGreek[textToAdd] || textToAdd :
-      // remap at all other times, but fallback
-      // for un-remapped values
-      textToAdd;
-    }
+    // beforeInsert: function(e, keyboard, el, textToAdd) {
+    //   return keyboard.altActive ?
+    //     // don't remap if alt is active
+    //     textToAdd :
+    //     // remap at all other times, but fallback
+    //     // for un-remapped values
+    //     remapGreek[textToAdd] || textToAdd;
+    // }
   }).addTyping({
       showTyping: true,
       delay: 1000,
       hoverDelay: 990
   }).previewKeyset({
-    'sets': ['normal', 'meta1', 'alt']
+    'sets': ['normal', 'alt']
   }).addAltKeyPopup({
   	holdTime : 500,
   	popupVisible : 'popup-visible'
