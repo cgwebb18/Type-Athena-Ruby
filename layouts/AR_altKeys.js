@@ -22,6 +22,6 @@ var AR_altKeys =
   v : '\ue349 \ue34a',
   z : '\ue34b',
   // This is the Greek keyboard's popups
-  '\u0391' : '\ue100 '
+  '\u0391' : '\ue100 \ue101 \ue102 \ue103 \ue104 \ue105 \ue106 \ue107 \ue108 \ue109 \ue10a \ue10b \ue10c \ue10d \ue10e \ue10f \ue110 \ue111 \ue112 \ue113 \ue114 \ue115 \ue116 \ue117 \ue118 \ue119 \ue11a'
 
 }

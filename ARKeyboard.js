@@ -14,7 +14,7 @@ $(function(){
   //   'z': '\u0396'
   // }
   //To Do: Add Greek Alt Keys
-  $.extend($.kb.altKeys = AR_altKeys);
+  $.extend($.keyboard.altKeys = AR_altKeys);
   //using enter and alt because they are common to both keyboards
   $.extend($.keyboard.keyaction.enter = function(base){
       var t = document.getElementsByClassName('ui-keyboard-preview')[0];
@@ -25,7 +25,13 @@ $(function(){
       f_str = '';
   });
   $.extend($.keyboard.keyaction.shift = function(base){
-    base.redraw('AR_G').caret('end');
+    if(base.options.layout == 'AR_L'){
+      base.redraw('AR_G').caret('end');
+    }
+    else {
+      base.redraw('AR_L').caret('end');
+    }
+
   });
   //changing language copies current text into new input and hides old input + kb
   $.extend($.keyboard.keyaction.accept = function(base){
@@ -58,7 +64,10 @@ $(function(){
     'sets': ['normal', 'alt']
   }).addAltKeyPopup({
   	holdTime : 500,
-  	popupVisible : 'popup-visible'
+  	popupVisible : 'popup-visible',
+    popupPosition : function(keyboard, data) {
+      data.$popup.css('left', data.popupLeft - 200);
+    }
   });
 
   //have to test and see if I can change enough to switch between Latin and Greek_altkeys
