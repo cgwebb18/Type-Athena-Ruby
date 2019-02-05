@@ -33,9 +33,15 @@ $(function(){
     }
 
   });
+  var testActive = false;
   //changing language copies current text into new input and hides old input + kb
   $.keyboard.keyaction.test = function(base){
-    console.log(base);
+
+    base.$keyboard.addExtender({
+      layout: testActive ? 'Extender1' : 'Extender2'
+    });
+
+    testActive = !testActive;
   };
 
   var kb = $('#l_kb').keyboard({
@@ -47,7 +53,7 @@ $(function(){
       'enter' : 'Copy',
       'shift' : 'Greek',
       'extender' : ' :Toggle Pad',
-      'test': 'TEST'
+      'test': 'Tiny'
     },
     // beforeInsert: function(e, keyboard, el, textToAdd) {
     //   return keyboard.altActive ?
