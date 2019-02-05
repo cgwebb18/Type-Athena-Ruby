@@ -47,7 +47,7 @@ $(function(){
   $.keyboard.keyaction.test2 = function(base){
     base.$keyboard.addExtender({
       layout: test2Active ? 'Extender1' : 'Extender3'
-    });
+    }).addAltKeyPopup();
 
     test2Active = !test2Active;
   };
