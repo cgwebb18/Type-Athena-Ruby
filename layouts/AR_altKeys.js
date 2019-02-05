@@ -46,6 +46,7 @@ var AR_altKeys =
   '\u03da' : '\ue17a \ue17b',
   '\u03d8' : '\ue17c \ue17d',
   '\u03e0' : '\ue17e \ue17f',
-  '\u2e09' : '\ue401 \ue402 \ue403 \u2e0a'
+  '\u2e09' : '\ue401 \ue402 \ue403 \u2e0a',
+  '\u00b7' : '\ue404'
 
 }
