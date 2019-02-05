@@ -48,7 +48,10 @@ var AR_altKeys =
   '\u03e0' : '\ue17e \ue17f',
   '\u2e09' : '\ue401 \ue402 \ue403 \u2e0a',
   '\u00b7' : '\ue404',
+  //These are the popups that apply to the diacritic keyboard
   '\u0313' : '\u1f08 \u1f18 \u1f28 \u1f38 \u1f48 \u1f50 \u1f68',
-  '\u1fbd' : '\u1f09 \u1f19 \u1f29 \u1f39 \u1f49 \u1f59 \u1f69'
-
+  '\u0314' : '\u1f09 \u1f19 \u1f29 \u1f39 \u1f49 \u1f59 \u1f69 \u1fec',
+  '\u0301' : '\u0386 \u0388 \u0389 \u038a \u038c \u038e \u038f',
+  '\u1fce' : '\u1f0c \u1f1c \u1f2c \u1f3c \u1f4c \u1f54 \u1f6c',
+  '\u1fcd' : '\u1f0a \u1f1a \u1f2a \u1f3a \u1f4a \u1f5b \u1f6a'
 }

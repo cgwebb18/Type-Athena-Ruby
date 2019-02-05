@@ -87,6 +87,6 @@ jQuery.keyboard.layouts['Extender3'] = {
 		'\u0313 \u1fbd \u0314 \u1ffe \u0301 \u0384',
 		'\u0300 \u1fef \u0342 \u1fc0 \u0304 \u0306',
 		'\u1fce \u1fcd \u1fcf \u1fde \u1fdd \u1fdf',
-		'{test2} \u1fed {test1}'
+		'{test2} \u1fed \u0385 {test1}'
 	]
 };
