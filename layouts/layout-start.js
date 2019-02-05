@@ -52,8 +52,8 @@ jQuery.keyboard.layouts['Extender1'] = {
 };
 
 
-jQuery.keyboard.layouts['Extender1'] = {
-	'name' : 'Extender1',
+jQuery.keyboard.layouts['Extender2'] = {
+	'name' : 'Extender2',
 	'normal' : [
 		'\ue180 \ue181 \ue182 \ue183 \ue184 \ue185 \ue186 \ue187 \ue188 \ue189 \ue18a \ue18b',
 		'\ue18c \ue18d \ue18e \ue18f \ue190 \ue191 \ue192 \ue193 \ue194 \ue195 \ue196 \ue197',
@@ -66,15 +66,27 @@ jQuery.keyboard.layouts['Extender1'] = {
 		'\ue1e0 \ue1e1 \ue1e2 \ue1e4 \ue1e5 \ue1e6 \ue1e7 \ue1e8 \ue1e9 \ue1ea \ue1eb \ue1ec',
 		'\ue1ed \ue1ef \ue1f0 \ue1f1 \ue1f2 \ue1f3 \ue1f4 \ue1f5 \ue1f6 \ue1f7 \ue1f8 \ue1f9',
 		'\ue1fa \ue1fb \ue1fc \ue1fd \ue1fe \ue1ff \ue200 \ue201 \ue202 \ue203 \ue204 \ue205',
-		'\ue206 \ue207 \ue208 \ue209 \ue20a {test}',
+		'{test2} \ue206 \ue207 \ue208 \ue209 \ue20a {test1}',
 	]
 };
 
-jQuery.keyboard.layouts['Extender2'] = {
-	'name' : 'Extender2',
+jQuery.keyboard.layouts['Extender1'] = {
+	'name' : 'Extender1',
 	'normal' : [
-		'\ue500 \ue501 \ue502 \ue503 \ue504 \ue506 \ue507 \ue508 \ue509 \ue50a \ue50b \ue50c',
-		'\ue50d \ue50e \ue50f \ue510 \ue511 \ue512 \ue513 \ue514 \ue515 \ue516 \ue517 \ue518',
-		'\ue519 {test}'
+		'\ue500 \ue501 \ue502 \ue503 \ue504 \ue506',
+		'\ue507 \ue508 \ue509 \ue50a \ue50b \ue50c',
+		'\ue50d \ue50e \ue50f \ue510 \ue511 \ue512',
+		'\ue513 \ue514 \ue515 \ue516 \ue517 \ue518',
+		'{test2} \ue519 {test1}'
+	]
+};
+
+jQuery.keyboard.layouts['Extender3'] = {
+	'name' : 'Extender3',
+	'normal' : [
+		'\u0313 \u1fbd \u0314 \u1ffe \u0301 \u0384',
+		'\u0300 \u1fef \u0342 \u1fc0 \u0304 \u0306',
+		'\u1fce \u1fcd \u1fcf \u1fde \u1fdd \u1fdf',
+		'{test2} \u1fed {test1}'
 	]
 };

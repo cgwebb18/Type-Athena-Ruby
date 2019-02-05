@@ -33,15 +33,23 @@ $(function(){
     }
 
   });
-  var testActive = false;
+  var test1Active = false;
+  var test2Active = false;
   //changing language copies current text into new input and hides old input + kb
-  $.keyboard.keyaction.test = function(base){
-
+  $.keyboard.keyaction.test1 = function(base){
     base.$keyboard.addExtender({
-      layout: testActive ? 'Extender1' : 'Extender2'
+      layout: test1Active ? 'Extender1' : 'Extender2'
     });
 
-    testActive = !testActive;
+    test1Active = !test1Active;
+  };
+
+  $.keyboard.keyaction.test2 = function(base){
+    base.$keyboard.addExtender({
+      layout: test2Active ? 'Extender1' : 'Extender3'
+    });
+
+    test2Active = !test2Active;
   };
 
   var kb = $('#l_kb').keyboard({
@@ -53,16 +61,9 @@ $(function(){
       'enter' : 'Copy',
       'shift' : 'Greek',
       'extender' : ' :Toggle Pad',
-      'test': 'Tiny'
-    },
-    // beforeInsert: function(e, keyboard, el, textToAdd) {
-    //   return keyboard.altActive ?
-    //     // don't remap if alt is active
-    //     textToAdd :
-    //     // remap at all other times, but fallback
-    //     // for un-remapped values
-    //     remapGreek[textToAdd] || textToAdd;
-    // }
+      'test1': 'Lig',
+      'test2' : 'Dia'
+    }
   }).addTyping({
       showTyping: true,
       delay: 1000,
