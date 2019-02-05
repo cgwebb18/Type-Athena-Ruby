@@ -34,10 +34,9 @@ $(function(){
 
   });
   //changing language copies current text into new input and hides old input + kb
-  $.extend($.keyboard.keyaction.accept = function(base){
-    //hides the current input
-    $(base.el.id).hide();
-  });
+  $.keyboard.keyaction.test = function(base){
+    console.log(base);
+  };
 
   var kb = $('#l_kb').keyboard({
   	layout: 'AR_L',
@@ -46,7 +45,9 @@ $(function(){
     combos : AR_combos,
     display : {
       'enter' : 'Copy',
-      'shift' : 'Greek'
+      'shift' : 'Greek',
+      'extender' : ' :Toggle Pad',
+      'test': 'TEST'
     },
     // beforeInsert: function(e, keyboard, el, textToAdd) {
     //   return keyboard.altActive ?
@@ -68,12 +69,14 @@ $(function(){
     popupPosition : function(keyboard, data) {
       data.$popup.css('left', data.popupLeft - 200);
     }
-  });
+  }).addExtender({
+    // choose any layout
+    layout: 'Extender1',
+    // start with extender showing?
+    showing: false,
+    // reposition keyboard after toggling extender layout
+    reposition: true
+  });;
 
-  //have to test and see if I can change enough to switch between Latin and Greek_altkeys
-  // but obviously want to maintain functionality and it's ok for now
-  // l_kb.on('keysetChange', function(e, keyboard, el){
-  //     $("button[data-name='meta1']").text('Latin')
-  // });
 
 });
