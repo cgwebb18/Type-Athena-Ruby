@@ -62,7 +62,7 @@ $(function(){
       'shift' : 'Greek',
       'extender' : ' :Toggle Pad',
       'test1': 'Lig',
-      'test2' : 'Dia'
+      'test2' : 'Sup'
     }
   }).addTyping({
       showTyping: true,

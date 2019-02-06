@@ -70,8 +70,8 @@ jQuery.keyboard.layouts['Extender2'] = {
 	]
 };
 
-jQuery.keyboard.layouts['Extender1'] = {
-	'name' : 'Extender1',
+jQuery.keyboard.layouts['Extender3'] = {
+	'name' : 'Extender3',
 	'normal' : [
 		'\ue500 \ue501 \ue502 \ue503 \ue504 \ue506',
 		'\ue507 \ue508 \ue509 \ue50a \ue50b \ue50c',
@@ -81,8 +81,8 @@ jQuery.keyboard.layouts['Extender1'] = {
 	]
 };
 
-jQuery.keyboard.layouts['Extender3'] = {
-	'name' : 'Extender3',
+jQuery.keyboard.layouts['Extender1'] = {
+	'name' : 'Extender1',
 	'normal' : [
 		'\u0313 \u1fbd \u0314 \u1ffe \u0301 \u0384',
 		'\u0300 \u1fef \u0342 \u1fc0 \u0304 \u0306',
