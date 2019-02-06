@@ -38,6 +38,7 @@ $(function(){
   var test3Active = false;
   var test4Active = false;
   var test5Active = false;
+  var test6Active = false;
   //changing language copies current text into new input and hides old input + kb
   $.keyboard.keyaction.test1 = function(base){
     base.$keyboard.addExtender({
@@ -73,10 +74,18 @@ $(function(){
 
   $.keyboard.keyaction.test5 = function(base){
     base.$keyboard.addExtender({
-      layout: test4Active ? 'Extender1' : 'Extender6'
+      layout: test5Active ? 'Extender1' : 'Extender6'
     }).addAltKeyPopup();
 
     test5Active = !test5Active;
+  };
+
+  $.keyboard.keyaction.test6 = function(base){
+    base.$keyboard.addExtender({
+      layout: test6Active ? 'Extender1' : 'Extender7'
+    }).addAltKeyPopup();
+
+    test6Active = !test6Active;
   };
 
   var kb = $('#l_kb').keyboard({
@@ -92,7 +101,8 @@ $(function(){
       'test2' : 'Sup',
       'test3' : 'Lg2',
       'test4' : 'Lin',
-      'test5' : 'Dot'
+      'test5' : 'Dot',
+      'test6' : 'Sym'
     }
   }).addTyping({
       showTyping: true,
