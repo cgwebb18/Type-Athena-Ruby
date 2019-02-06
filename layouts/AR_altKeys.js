@@ -63,5 +63,6 @@ var AR_altKeys =
   '\u0300' : '\u1fba \u1fc8 \u1fca \u1fda \u1ff8 \u1fea \u1ffa',
   '\u0342' : '\u1fb6 \u1fc6 \u1fd6 \u1fe6 \u1ff6',
   '\u0304' : '\u1fb9 \u1fd9 \u1fe9',
-  '\u0306' : '\u1fb8 \u1fd8 \u1fe8'
+  '\u0306' : '\u1fb8 \u1fd8 \u1fe8',
+  '\u0308' : '\u0399'
 }

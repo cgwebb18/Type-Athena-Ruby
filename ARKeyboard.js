@@ -35,6 +35,9 @@ $(function(){
   });
   var test1Active = false;
   var test2Active = false;
+  var test3Active = false;
+  var test4Active = false;
+  var test5Active = false;
   //changing language copies current text into new input and hides old input + kb
   $.keyboard.keyaction.test1 = function(base){
     base.$keyboard.addExtender({
@@ -52,6 +55,30 @@ $(function(){
     test2Active = !test2Active;
   };
 
+  $.keyboard.keyaction.test3 = function(base){
+    base.$keyboard.addExtender({
+      layout: test3Active ? 'Extender1' : 'Extender4'
+    }).addAltKeyPopup();
+
+    test3Active = !test3Active;
+  };
+
+  $.keyboard.keyaction.test4 = function(base){
+    base.$keyboard.addExtender({
+      layout: test4Active ? 'Extender1' : 'Extender5'
+    }).addAltKeyPopup();
+
+    test4Active = !test4Active;
+  };
+
+  $.keyboard.keyaction.test5 = function(base){
+    base.$keyboard.addExtender({
+      layout: test4Active ? 'Extender1' : 'Extender6'
+    }).addAltKeyPopup();
+
+    test5Active = !test5Active;
+  };
+
   var kb = $('#l_kb').keyboard({
   	layout: 'AR_L',
     stayOpen: true,
@@ -62,7 +89,10 @@ $(function(){
       'shift' : 'Greek',
       'extender' : ' :Toggle Pad',
       'test1': 'Lig',
-      'test2' : 'Sup'
+      'test2' : 'Sup',
+      'test3' : 'Lg2',
+      'test4' : 'Lin',
+      'test5' : 'Dot'
     }
   }).addTyping({
       showTyping: true,

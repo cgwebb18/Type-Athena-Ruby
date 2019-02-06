@@ -47,7 +47,8 @@ jQuery.keyboard.layouts['Extender1'] = {
 		'\ue1e0 \ue1e1 \ue1e2 \ue1e4 \ue1e5 \ue1e6 \ue1e7 \ue1e8 \ue1e9 \ue1ea \ue1eb \ue1ec',
 		'\ue1ed \ue1ef \ue1f0 \ue1f1 \ue1f2 \ue1f3 \ue1f4 \ue1f5 \ue1f6 \ue1f7 \ue1f8 \ue1f9',
 		'\ue1fa \ue1fb \ue1fc \ue1fd \ue1fe \ue1ff \ue200 \ue201 \ue202 \ue203 \ue204 \ue205',
-		'\ue206 \ue207 \ue208 \ue209 \ue20a {tab}',
+		'\ue206 \ue207 \ue208 \ue209 \ue20a',
+		'{test1} {test2} {test3} {test4} {test5}'
 	]
 };
 
@@ -66,7 +67,8 @@ jQuery.keyboard.layouts['Extender2'] = {
 		'\ue1e0 \ue1e1 \ue1e2 \ue1e4 \ue1e5 \ue1e6 \ue1e7 \ue1e8 \ue1e9 \ue1ea \ue1eb \ue1ec',
 		'\ue1ed \ue1ef \ue1f0 \ue1f1 \ue1f2 \ue1f3 \ue1f4 \ue1f5 \ue1f6 \ue1f7 \ue1f8 \ue1f9',
 		'\ue1fa \ue1fb \ue1fc \ue1fd \ue1fe \ue1ff \ue200 \ue201 \ue202 \ue203 \ue204 \ue205',
-		'{test2} \ue206 \ue207 \ue208 \ue209 \ue20a {test1}',
+		'\ue206 \ue207 \ue208 \ue209 \ue20a',
+		'{test1} {test2} {test3} {test4} {test5}'
 	]
 };
 
@@ -77,7 +79,8 @@ jQuery.keyboard.layouts['Extender3'] = {
 		'\ue507 \ue508 \ue509 \ue50a \ue50b \ue50c',
 		'\ue50d \ue50e \ue50f \ue510 \ue511 \ue512',
 		'\ue513 \ue514 \ue515 \ue516 \ue517 \ue518',
-		'{test2} \ue519 {test1}'
+		'\ue519',
+		'{test1} {test2} {test3} {test4} {test5}'
 	]
 };
 
@@ -87,6 +90,46 @@ jQuery.keyboard.layouts['Extender1'] = {
 		'\u0313 \u1fbd \u0314 \u1ffe \u0301 \u0384',
 		'\u0300 \u1fef \u0342 \u1fc0 \u0304 \u0306',
 		'\u1fce \u1fcd \u1fcf \u1fde \u1fdd \u1fdf',
-		'{test2} \u1fed \u0385 {test1}'
+		'\u1fed \u0385 \u0308',
+		'{test1} {test2} {test3} {test4} {test5}'
+	]
+};
+
+jQuery.keyboard.layouts['Extender4'] = {
+	'name' : 'Extender4',
+	'normal' : [
+		'\ue34c \ue34d \ue34e \ue34f \ue350 \ue351',
+		'\u2180 \ue352 \ue51a \ue51b',
+		'{test1} {test2} {test3} {test4} {test5}'
+	]
+};
+
+jQuery.keyboard.layouts['Extender5'] = {
+	'name' : 'Extender5',
+	'normal' : [
+		'\u002f \ue405 \u02c1 \u2e23 \ue40b \u0337',
+		'\ue408 \ue700 \ue701 \ue702 \ue703 \ue704',
+		'\ue705 \ue706 \ue707 \ue708 \ue709 \ue70a',
+		'\ue70b \ue70c \ue70d \ue70e \ue70f \ue710',
+		'\ue711 \ue712 \ue713 \ue714 \ue715 \ue716',
+		'\ue717 \ue718 \ue719 \ue71a \ue71b \ue71c',
+		'\ue71d \ue71e',
+		'{test1} {test2} {test3} {test4} {test5}'
+	]
+};
+
+jQuery.keyboard.layouts['Extender6'] = {
+	'name' : 'Extender6',
+	'normal' : [
+		'\ue71f \ue720 \ue721 \ue722 \ue723 \ue724',
+		'\ue725 \ue726 \ue727 \ue728 \ue729 \ue72a',
+		'\ue72b \ue72c \ue72d \ue72e \ue72f \ue730',
+		'\ue731 \ue732 \ue733 \ue734 \ue735 \ue736',
+		'\ue737 \ue738 \ue739 \ue73a \ue73b \ue73c',
+		'\ue73d \ue73e \ue73f \ue740 \ue741 \ue742',
+		'\ue743 \ue744 \ue745 \ue746 \ue747 \ue748',
+		'\ue749 \ue74a \ue74b \ue74c \ue74d \ue74e',
+		'\ue74f \ue74a ',
+		'{test1} {test2} {test3} {test4} {test5}'
 	]
 };
