@@ -3,17 +3,6 @@
 //I didn't do it this way so that I could take advantage of the previewkeyset func
 
 $(function(){
-
-  // var f_string = '';
-  // var remapGreek = {
-  //   'a': '\u0391', 'b': '\u0392', 'c': '\u03a8', 'd': '\u0393', 'e': '\u03a1',
-  //   'f': '\u03a6', 'g': '\u0393', 'h': '\u0397', 'i': '\u0399', 'j': '\u039e',
-  //   'k': '\u039a', 'l': '\u039b', 'm': '\u039c', 'n': '\u039d', 'o': '\u039f',
-  //   'p': '\u03a0', 'q': '\u0313', 'r': '\u0395', 's': '\u03a3', 't': '\u03a4',
-  //   'u': '\u0398', 'v': '\u03a9', 'w': '\u03da', 'x': '\u03a7', 'y': '\u03a5',
-  //   'z': '\u0396'
-  // }
-  //To Do: Add Greek Alt Keys
   $.extend($.keyboard.altKeys = AR_altKeys);
   //using enter and alt because they are common to both keyboards
   $.extend($.keyboard.keyaction.enter = function(base){
@@ -92,7 +81,6 @@ $(function(){
   	layout: 'AR_L',
     stayOpen: true,
   	repeatRate : 0,
-    combos : AR_combos,
     display : {
       'enter' : 'Copy',
       'shift' : 'Greek',
