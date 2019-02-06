@@ -16,9 +16,11 @@ $(function(){
   $.extend($.keyboard.keyaction.shift = function(base){
     if(base.options.layout == 'AR_L'){
       base.redraw('AR_G').caret('end');
+      $('.ui-keyboard-shift').text('Latin');
     }
     else {
       base.redraw('AR_L').caret('end');
+      $('.ui-keyboard-shift').text('Greek');
     }
 
   });
