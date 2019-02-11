@@ -24,60 +24,44 @@ $(function(){
     }
 
   });
-  var test1Active = false;
-  var test2Active = false;
-  var test3Active = false;
-  var test4Active = false;
-  var test5Active = false;
-  var test6Active = false;
-  //changing language copies current text into new input and hides old input + kb
-  $.keyboard.keyaction.test1 = function(base){
-    base.$keyboard.addExtender({
-      layout: test1Active ? 'Extender1' : 'Extender2'
-    });
 
-    test1Active = !test1Active;
-  };
-
-  $.keyboard.keyaction.test2 = function(base){
-    base.$keyboard.addExtender({
-      layout: test2Active ? 'Extender1' : 'Extender3'
-    }).addAltKeyPopup();
-
-    test2Active = !test2Active;
-  };
-
-  $.keyboard.keyaction.test3 = function(base){
-    base.$keyboard.addExtender({
-      layout: test3Active ? 'Extender1' : 'Extender4'
-    }).addAltKeyPopup();
-
-    test3Active = !test3Active;
-  };
-
-  $.keyboard.keyaction.test4 = function(base){
-    base.$keyboard.addExtender({
-      layout: test4Active ? 'Extender1' : 'Extender5'
-    }).addAltKeyPopup();
-
-    test4Active = !test4Active;
-  };
-
-  $.keyboard.keyaction.test5 = function(base){
-    base.$keyboard.addExtender({
-      layout: test5Active ? 'Extender1' : 'Extender6'
-    }).addAltKeyPopup();
-
-    test5Active = !test5Active;
-  };
-
-  $.keyboard.keyaction.test6 = function(base){
-    base.$keyboard.addExtender({
-      layout: test6Active ? 'Extender1' : 'Extender7'
-    }).addAltKeyPopup();
-
-    test6Active = !test6Active;
-  };
+  $.extend($.keyboard.keyaction, {
+    diacritic : function(base){
+      base.$keyboard.addExtender({
+        layout: 'Diacritics'
+      }).addAltKeyPopup();
+    },
+    g_ligatures : function(base){
+      base.$keyboard.addExtender({
+        layout : 'GreekLigatures'
+      });
+    },
+    l_ligatures : function(base){
+      base.$keyboard.addExtender({
+        layout : 'LatinLigatures'
+      });
+    },
+    superscripts : function(base){
+      base.$keyboard.addExtender({
+        layout : 'Superscripts'
+      });
+    },
+    lines : function(base){
+      base.$keyboard.addExtender({
+        layout : 'Lines'
+      });
+    },
+    dots : function(base){
+      base.$keyboard.addExtender({
+        layout : 'Dots'
+      });
+    },
+    symbols : function(base){
+      base.$keyboard.addExtender({
+        layout : 'Symbols'
+      });
+    }
+  });
 
   var kb = $('#l_kb').keyboard({
   	layout: 'AR_L',
@@ -87,12 +71,13 @@ $(function(){
       'enter' : 'Copy',
       'shift' : 'Greek',
       'extender' : ' :Toggle Pad',
-      'test1': 'Lig',
-      'test2' : 'Sup',
-      'test3' : 'Lg2',
-      'test4' : 'Lin',
-      'test5' : 'Dot',
-      'test6' : 'Sym'
+      'diacritic': 'dia',
+      'g_ligatures' : 'lg1',
+      'l_ligatures' : 'lg2',
+      'lines' : 'lin',
+      'dots' : 'dot',
+      'symbols' : 'sym',
+      'superscripts' : 'sup'
     }
   }).addTyping({
       showTyping: true,
@@ -108,7 +93,7 @@ $(function(){
     }
   }).addExtender({
     // choose any layout
-    layout: 'Extender1',
+    layout: 'Diacritics',
     // start with extender showing?
     showing: false,
     // reposition keyboard after toggling extender layout

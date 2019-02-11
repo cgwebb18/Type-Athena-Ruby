@@ -11,7 +11,7 @@ var AR_altKeys =
   i : '\ue326',
   k : '\ue327',
   l : '\ue328 \ue329 \ue32a',
-  m : '\ue32a\b \ue32a\c \ue32d \ue32e \ue32f \ue330 \ue331',
+  m : '\ue32b \ue32c \ue32d \ue32e \ue32f \ue330 \ue331',
   n : '\ue332 \ue333 \ue334 \ue335 \ue336',
   o : '\ue337',
   p : '\ue338',
