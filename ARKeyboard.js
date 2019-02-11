@@ -3,15 +3,21 @@
 //I didn't do it this way so that I could take advantage of the previewkeyset func
 
 $(function(){
+  var count = 0;
   $.extend($.keyboard.altKeys = AR_altKeys);
   //using enter and alt because they are common to both keyboards
   $.extend($.keyboard.keyaction.enter = function(base){
-      var t = document.getElementsByClassName('ui-keyboard-preview')[0];
-      console.log(t);
-      t.focus();
-      t.select();
-      document.execCommand('copy');
-      f_str = '';
+    var t = document.getElementsByClassName('ui-keyboard-preview')[0];
+    $('<li>', {id : count, "class" : 'h_item', click :
+        function(){
+          var z = $(this)[0].textContent;
+          var kb = $('#kb').getkeyboard();
+          kb.reveal().insertText(z);
+        }}).text(base.getValue()).appendTo('#h-list');
+    t.focus();
+    t.select();
+    document.execCommand('copy');
+    count += 1;
   });
   $.extend($.keyboard.keyaction.shift = function(base){
     if(base.options.layout == 'AR_L'){
@@ -63,7 +69,7 @@ $(function(){
     }
   });
 
-  var kb = $('#l_kb').keyboard({
+  var kb = $('#kb').keyboard({
   	layout: 'AR_L',
     stayOpen: true,
   	repeatRate : 0,

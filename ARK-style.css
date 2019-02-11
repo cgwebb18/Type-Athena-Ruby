@@ -21,8 +21,31 @@ textarea, input {
     padding: 5px 0;
 }
 
+.h_item:hover{
+  background-color: #5970e5;
+}
+
+.h_item{
+  border-radius: 2px;
+}
+
+#h-list{
+  margin-top: 0;
+  border-radius: 5px;
+  background-color: white;
+  height: 10%;
+  width: 200px;
+  margin-left: 40%;
+  list-style: none;
+  display: inline-block;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-left: 0;
+}
+
 .ui-keyboard {
-  height: 100%;
+  height: 80%;
+  margin-bottom: 0;
 }
 
 .ui-keyboard-text {
@@ -39,7 +62,7 @@ textarea, input {
 
 #input {
     display: block;
-    margin: auto auto;
+    margin-left: 40%;
     width: 200px;
 }
 
