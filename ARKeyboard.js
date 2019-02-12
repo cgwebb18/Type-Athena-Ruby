@@ -11,6 +11,7 @@ $(function(){
     $('<li>', {id : count, "class" : 'h_item', click :
         function(){
           var z = $(this)[0].textContent;
+          console.log(z)
           var kb = $('#kb').getkeyboard();
           kb.reveal().insertText(z);
         }}).text(base.getValue()).appendTo('#h-list');
