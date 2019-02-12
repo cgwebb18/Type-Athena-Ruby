@@ -12,6 +12,17 @@
     background: #222;
 }
 
+#links {
+  font-family: sans-serif;
+  float:right;
+  color: white;
+  width: 350px;
+}
+
+#instructions {
+  color: white;
+}
+
 textarea, input {
     font-family: 'athena_rubyregular';
     width: 260px;
@@ -46,6 +57,7 @@ textarea, input {
 .ui-keyboard {
   height: 80%;
   margin-bottom: 0;
+  white-space: normal;
 }
 
 .ui-keyboard-text {
@@ -79,21 +91,6 @@ textarea, input {
 
 }
 
-#instructions {
-  color: white;
-  position: fixed;
-  bottom: 30%;
-  margin-left: 25%;
-  text-align: center;
-}
-
-#i_ex {
-  color: #d58512
-}
-
-#a_ex {
-  color: #269abc
-}
 
 /* custom css for previewkeyset */
 /* basic previewKeyset setup - modify as desired */

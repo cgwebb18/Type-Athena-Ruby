@@ -76,7 +76,6 @@ $(function(){
     display : {
       'enter' : 'Copy',
       'shift' : 'Greek',
-      'extender' : ' :Toggle Pad',
       'diacritic': 'dia',
       'g_ligatures' : 'lg1',
       'l_ligatures' : 'lg2',
@@ -96,6 +95,7 @@ $(function(){
   	popupVisible : 'popup-visible',
     popupPosition : function(keyboard, data) {
       data.$popup.css('left', data.popupLeft - 200);
+      data.$popup.css('width', 'auto');
     }
   }).addExtender({
     // choose any layout
