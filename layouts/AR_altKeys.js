@@ -48,6 +48,7 @@ var AR_altKeys =
   '\u03e0' : '\ue17e \ue17f',
   '\u2e09' : '\ue401 \ue402 \ue403 \u2e0a',
   '\u00b7' : '\ue404',
+  '\u03a3' : '\ue168 \ue169 \ue16a \ue16b',
   //These are the popups that apply to the diacritic keyboard
   '\u0313' : '\u1f08 \u1f18 \u1f28 \u1f38 \u1f48 \u1f50 \u1f68',
   '\u0314' : '\u1f09 \u1f19 \u1f29 \u1f39 \u1f49 \u1f59 \u1f69 \u1fec',
