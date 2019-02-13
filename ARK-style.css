@@ -1,12 +1,4 @@
-/* jQuery UI is not loaded!
-  this demo uses the "keyboard-dark.css" theme
-  ( https://github.com/Mottie/Keyboard/blob/master/css/keyboard-dark.css )
-  to add a basic dark theme to the keyboard
-
-  The theme includes css to position the keyboard
-  at the botom of the browser window
-*/
- body {
+body {
     font-family: 'athena_rubyregular';
     margin-top: 10px;
     background: #222;
