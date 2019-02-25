@@ -1,7 +1,3 @@
-//The person who maintains this library does two keyboards this way:
-//https://jsfiddle.net/Mottie/xkk95vf6/
-//I didn't do it this way so that I could take advantage of the previewkeyset func
-
 $(function(){
   var count = 0;
   $.extend($.keyboard.altKeys = AR_altKeys);
